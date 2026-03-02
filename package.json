@@ -2,9 +2,11 @@
   "name": "cse341-node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "git-update": "git add . && git commit -m \"update\" && git push"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/KobinaOtc/cse341-node/issues"
   },
-  "homepage": "https://github.com/KobinaOtc/cse341-node#readme"
+  "homepage": "https://github.com/KobinaOtc/cse341-node#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
